@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="170" viewBox="0 0 1200 170" role="img" aria-labelledby="title desc">
+  <title id="title">Cortexyn technology stack</title>
+  <desc id="desc">TypeScript, Rust, JavaScript, Python, Lua, HTML and CSS, n8n, and GitHub Actions.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071719"/><stop offset="1" stop-color="#102124"/></linearGradient>
+    <linearGradient id="border" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#22d3c5"/><stop offset="1" stop-color="#ff9f43"/></linearGradient>
+  </defs>
+  <style>.label { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 17px; font-weight: 600; letter-spacing:.5px }</style>
+  <rect x="1" y="1" width="1198" height="168" rx="16" fill="url(#bg)" stroke="url(#border)" stroke-width="2"/>
+  <g fill="#0c292b" stroke="#22d3c5" stroke-opacity=".68">
+    <rect x="35" y="34" width="145" height="42" rx="10"/><rect x="195" y="34" width="100" height="42" rx="10"/>
+    <rect x="310" y="34" width="145" height="42" rx="10"/><rect x="470" y="34" width="110" height="42" rx="10"/>
+    <rect x="595" y="34" width="82" height="42" rx="10"/><rect x="692" y="34" width="135" height="42" rx="10"/>
+    <rect x="842" y="34" width="82" height="42" rx="10"/><rect x="939" y="34" width="226" height="42" rx="10"/>
+  </g>
+  <g class="label" fill="#dcfffc" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="17" font-weight="600">
+    <text x="107" y="61">TypeScript</text><text x="245" y="61">Rust</text><text x="382" y="61">JavaScript</text>
+    <text x="525" y="61">Python</text><text x="636" y="61">Lua</text><text x="759" y="61">HTML / CSS</text>
+    <text x="883" y="61">n8n</text><text x="1052" y="61">GitHub Actions</text>
+  </g>
+  <path d="M42 119H352L375 98H589L612 119H1158" fill="none" stroke="#ff9f43" stroke-opacity=".55"/>
+  <circle cx="375" cy="98" r="4" fill="#22d3c5"/><circle cx="612" cy="119" r="4" fill="#ff9f43"/>
+  <text x="42" y="145" class="label" fill="#759997" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="17" font-weight="600">PUBLIC REPOSITORY SIGNAL // UPDATED BY THE BUILD LOG</text>
+</svg>
+
