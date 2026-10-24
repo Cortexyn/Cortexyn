@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="250" viewBox="0 0 1200 250" role="img" aria-labelledby="title desc">
   <title id="title">Public GitHub statistics for Cortexyn</title>
-  <desc id="desc">5 public repositories, 2 followers, 0 stars earned, and 0 forks.</desc>
+  <desc id="desc">6 public repositories, 2 followers, 0 stars earned, and 0 forks.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#061719"/><stop offset="1" stop-color="#111b20"/></linearGradient>
     <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#22d3c5"/><stop offset="1" stop-color="#ff9f43"/></linearGradient>
@@ -16,7 +16,7 @@
     <g transform="translate(54 84)">
       <rect width="258" height="105" rx="12" fill="#0b2427" stroke="#2de0d1" stroke-opacity=".42"/>
       <text x="20" y="34" class="label" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="14" font-weight="600">PUBLIC REPOS</text>
-      <text x="20" y="79" class="value" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="34" font-weight="700">5</text>
+      <text x="20" y="79" class="value" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="34" font-weight="700">6</text>
     </g>
     <g transform="translate(332 84)">
       <rect width="258" height="105" rx="12" fill="#0b2427" stroke="#2de0d1" stroke-opacity=".42"/>
@@ -33,6 +33,6 @@
       <text x="20" y="34" class="label" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="14" font-weight="600">FORKS</text>
       <text x="20" y="79" class="value" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="34" font-weight="700">0</text>
     </g>
-  <text x="36" y="224" class="mono" fill="#6e9391" font-size="13">LAST SYNC // 2026-10-24 23:17 UTC</text>
+  <text x="36" y="224" class="mono" fill="#6e9391" font-size="13">LAST SYNC // 2026-10-24 23:40 UTC</text>
   <circle cx="1158" cy="219" r="5" fill="#36d399"/>
 </svg>
