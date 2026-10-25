@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="250" viewBox="0 0 1200 250" role="img" aria-labelledby="title desc">
-  <title id="title">Public GitHub statistics for Cortexyn</title>
-  <desc id="desc">6 public repositories, 2 followers, 0 stars earned, and 0 forks.</desc>
+  <title id="title">Public GitHub repository statistics for Cortexyn</title>
+  <desc id="desc">5 public repositories: 2 original builds, 3 working forks, and 0 stars earned across original builds.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#061719"/><stop offset="1" stop-color="#111b20"/></linearGradient>
     <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#22d3c5"/><stop offset="1" stop-color="#ff9f43"/></linearGradient>
@@ -12,27 +12,27 @@
   </style>
   <rect x="1" y="1" width="1198" height="248" rx="16" fill="url(#bg)" stroke="url(#edge)" stroke-width="2"/>
   <text x="36" y="48" class="mono" fill="#ffad5c" font-size="20">PUBLIC SIGNAL // @Cortexyn</text>
-  <text x="1164" y="48" text-anchor="end" class="mono" fill="#789c9a" font-size="14">LIVE API SNAPSHOT</text>
+  <text x="1164" y="48" text-anchor="end" class="mono" fill="#789c9a" font-size="14">PUBLIC API // VERIFIED</text>
     <g transform="translate(54 84)">
       <rect width="258" height="105" rx="12" fill="#0b2427" stroke="#2de0d1" stroke-opacity=".42"/>
       <text x="20" y="34" class="label" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="14" font-weight="600">PUBLIC REPOS</text>
-      <text x="20" y="79" class="value" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="34" font-weight="700">6</text>
+      <text x="20" y="79" class="value" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="34" font-weight="700">5</text>
     </g>
     <g transform="translate(332 84)">
       <rect width="258" height="105" rx="12" fill="#0b2427" stroke="#2de0d1" stroke-opacity=".42"/>
-      <text x="20" y="34" class="label" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="14" font-weight="600">FOLLOWERS</text>
+      <text x="20" y="34" class="label" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="14" font-weight="600">ORIGINAL BUILDS</text>
       <text x="20" y="79" class="value" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="34" font-weight="700">2</text>
     </g>
     <g transform="translate(610 84)">
       <rect width="258" height="105" rx="12" fill="#0b2427" stroke="#2de0d1" stroke-opacity=".42"/>
-      <text x="20" y="34" class="label" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="14" font-weight="600">STARS EARNED</text>
-      <text x="20" y="79" class="value" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="34" font-weight="700">0</text>
+      <text x="20" y="34" class="label" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="14" font-weight="600">WORKING FORKS</text>
+      <text x="20" y="79" class="value" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="34" font-weight="700">3</text>
     </g>
     <g transform="translate(888 84)">
       <rect width="258" height="105" rx="12" fill="#0b2427" stroke="#2de0d1" stroke-opacity=".42"/>
-      <text x="20" y="34" class="label" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="14" font-weight="600">FORKS</text>
+      <text x="20" y="34" class="label" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="14" font-weight="600">STARS EARNED</text>
       <text x="20" y="79" class="value" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="34" font-weight="700">0</text>
     </g>
-  <text x="36" y="224" class="mono" fill="#6e9391" font-size="13">LAST SYNC // 2026-10-24 23:44 UTC</text>
+  <text x="36" y="224" class="mono" fill="#6e9391" font-size="13">LAST SYNC // 2026-10-25 00:11 UTC</text>
   <circle cx="1158" cy="219" r="5" fill="#36d399"/>
 </svg>

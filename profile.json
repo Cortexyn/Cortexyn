@@ -1,0 +1,21 @@
+{
+  "focus": [
+    {"slug": "ai-agents", "code": "01", "title": "AI & AGENTS", "lines": ["LLM interfaces", "Agentic tooling", "Local-first experiments"]},
+    {"slug": "automation", "code": "02", "title": "AUTOMATION", "lines": ["APIs & workflows", "Connected systems", "Reliable signals"]},
+    {"slug": "development", "code": "03", "title": "DEVELOPMENT", "lines": ["Purpose-built apps", "Developer tooling", "Infrastructure"]},
+    {"slug": "gaming", "code": "04", "title": "GAMING", "lines": ["Addons & overlays", "Localization", "Game systems"]},
+    {"slug": "aviation", "code": "05", "title": "AVIATION", "lines": ["Soaring", "Weather signals", "Flight planning"]}
+  ],
+  "projects": [
+    {"slug": "n8n-workflows", "title": "n8n-workflows", "kind": "OWN BUILD", "accent": "teal", "description": "Practical workflow automation", "detail": "Thermal forecasts · Steam deals tracker · more", "tags": ["JAVASCRIPT", "N8N"]},
+    {"slug": "termexo", "title": "Termexo", "kind": "OPEN SOURCE", "accent": "orange", "description": "macOS port in a working fork", "detail": "PTY · Keychain · native controls · packaging", "tags": ["TYPESCRIPT", "RUST"]},
+    {"slug": "does-it-die", "title": "DoesItDie", "kind": "OPEN SOURCE", "accent": "orange", "description": "German localization in a working fork", "detail": "deDE copy · spell names · tooltip parsing", "tags": ["LUA", "WOW"]},
+    {"slug": "polestar", "title": "Polestar", "kind": "OPEN SOURCE", "accent": "orange", "description": "German localization and audit tooling", "detail": "UI & guide translations · client-accurate names", "tags": ["LUA", "PYTHON"]}
+  ],
+  "stack": ["PYTHON", "TYPESCRIPT", "JAVASCRIPT", "RUST", "LUA", "HTML / CSS", "SHELL", "N8N", "GITHUB ACTIONS", "GIT"],
+  "beyond": [
+    {"code": "PLAY", "title": "GAMING", "lines": ["Systems, addons, tools,", "and the worlds they support."]},
+    {"code": "FLY", "title": "AVIATION", "lines": ["Soaring, weather signals,", "and flight-planning automation."]},
+    {"code": "TEST", "title": "EXPERIMENTATION", "lines": ["Turning a stubborn what if", "into a working prototype."]}
+  ]
+}

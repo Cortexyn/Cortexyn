@@ -1,75 +1,53 @@
-# Cortexyn profile setup
+# Cortexyn command-center maintenance
 
-This folder is ready to become the public profile repository for `@Cortexyn`.
+This is the public profile repository for `@Cortexyn`. GitHub renders the root `README.md` on the profile.
 
-## 1. Create the special repository
+## Content model
 
-On GitHub, create a new repository with these exact settings:
+The profile is intentionally split into three layers:
 
-- **Owner:** `Cortexyn`
-- **Repository name:** `Cortexyn`
-- **Visibility:** Public
+- `README.md` controls section order, links, accessibility text, and the responsive table layout.
+- `profile.json` is the editable source for focus cards, project cards, the technology matrix, and off-duty signals.
+- `scripts/generate_assets.py` turns `profile.json` into self-contained SVG files in `assets/`.
 
-The repository must be public, its name must match the account name, and `README.md` must live in the repository root. GitHub then displays it on the account profile automatically.
-
-If `Cortexyn/Cortexyn` already exists, use that repository instead of creating another one.
-
-## 2. Upload this folder
-
-Copy the contents of `Cortexyn-profile` into the repository root, preserving the hidden `.github` directory. The finished repository should look like this:
-
-```text
-Cortexyn/
-├── .github/
-│   └── workflows/
-│       └── update-profile.yml
-├── assets/
-│   ├── circuit-divider.svg
-│   ├── cortex-banner.jpeg
-│   ├── github-stats.svg
-│   ├── tech-stack.svg
-│   └── terminal.svg
-├── scripts/
-│   └── update_profile.py
-├── README.md
-└── SETUP.md
-```
-
-You can also publish from a terminal after creating the empty GitHub repository:
+Edit content in `profile.json`, then regenerate the static dashboard assets:
 
 ```bash
-git init
-git add .
-git commit -m "feat: launch Cortexyn command center"
-git branch -M main
-git remote add origin https://github.com/Cortexyn/Cortexyn.git
-git push -u origin main
+python3 scripts/generate_assets.py
 ```
 
-## 3. Start live telemetry
+Check that committed assets match the source without changing files:
 
-The initial `assets/github-stats.svg` contains a real public API snapshot taken during setup. A scheduled GitHub Actions workflow refreshes it every Monday and can also be run manually:
+```bash
+python3 scripts/generate_assets.py --check
+```
 
-1. Open the repository's **Actions** tab.
-2. Select **Update public profile telemetry**.
-3. Choose **Run workflow**.
+## Public telemetry
 
-The workflow uses GitHub's repository-scoped `GITHUB_TOKEN`; no personal access token or extra secret is required. If a repository or organization policy blocks the commit, open **Settings → Actions → General → Workflow permissions** and allow read and write permissions for workflows.
+`scripts/update_profile.py` calls the public GitHub API and writes `assets/github-stats.svg`. It counts only public repositories returned by the API. Forks and original repositories are separated, and stars are counted only across original repositories.
 
-## 4. Maintain the profile
+```bash
+python3 scripts/update_profile.py --username Cortexyn --output assets/github-stats.svg
+```
 
-- Update the short introduction directly in `README.md`.
-- Keep the featured projects list selective and link only existing public repositories.
-- For collaborative projects, link the official upstream first and describe the contribution precisely; use the personal fork only as the working-fork link.
-- Edit `assets/tech-stack.svg` when the public stack changes.
-- Keep the banner filename unchanged, or update its path in `README.md` when replacing it.
-- The animation is contained entirely in `assets/terminal.svg`; it uses no JavaScript or external stylesheet.
+The GitHub Actions workflow runs every Monday and can also be started manually. It regenerates static assets, refreshes public telemetry, and commits only when generated SVG files changed. It uses the repository-scoped `GITHUB_TOKEN`; no personal token is required.
 
-## GitHub README constraints respected
+## Project-card rules
 
-- GitHub Flavored Markdown and basic HTML only.
-- No custom page-level CSS or JavaScript.
-- Relative, repository-local asset paths.
-- SVG animation has a reduced-motion fallback.
-- Statistics come from the public GitHub API and are never manually fabricated.
+- Link a project card to an existing public repository.
+- Mark personal repositories as `OWN BUILD` and forks as `OPEN SOURCE`.
+- Link the official upstream repository in `README.md` before describing a fork as a contribution.
+- Never include private projects, private activity, placeholder metrics, or guessed counters.
 
+## GitHub rendering constraints
+
+- GitHub Flavored Markdown and GitHub-safe HTML only.
+- No page-level CSS, JavaScript, `foreignObject`, or external SVG resources.
+- Project links live in README HTML around each image; SVG-internal links are not relied upon.
+- Every SVG has a title and description, and every README image has alt text.
+- SVG animation is decorative and includes a reduced-motion fallback.
+- Fonts use local system/monospace fallbacks, so no remote font request is needed.
+
+## Layout notes
+
+The five focus cards and four project cards are separate SVGs. This keeps the command-center look while allowing GitHub to reflow the tables on narrower screens. The original JPEG banner remains the only raster design asset.
